@@ -512,7 +512,7 @@ public class Salida extends javax.swing.JPanel {
         System.out.println(OP_ARIT);
         return OP_ARIT + "\n";
     }
-
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables
 }
