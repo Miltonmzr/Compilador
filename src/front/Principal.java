@@ -5,6 +5,7 @@
 package front;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.logging.Level;
@@ -18,6 +19,7 @@ import lexico.AnalisisLexico;
  */
 public class Principal extends javax.swing.JFrame {
     private Editor editor;
+    private Salida salida;
     /**
      * Creates new form Principal
      */
@@ -44,7 +46,7 @@ public class Principal extends javax.swing.JFrame {
         btnGuardarTodo = new javax.swing.JButton();
         btnCerrar = new javax.swing.JButton();
         btnCerrarTodo = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        btnCompilar = new javax.swing.JButton();
         jSplitPane1 = new javax.swing.JSplitPane();
         tpnFuentes = new javax.swing.JTabbedPane();
         tpnSalidas = new javax.swing.JTabbedPane();
@@ -136,16 +138,16 @@ public class Principal extends javax.swing.JFrame {
         });
         jToolBar1.add(btnCerrarTodo);
 
-        jButton1.setText("Ejecutar");
-        jButton1.setFocusable(false);
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnCompilar.setText("Ejecutar");
+        btnCompilar.setFocusable(false);
+        btnCompilar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnCompilar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnCompilar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnCompilarActionPerformed(evt);
             }
         });
-        jToolBar1.add(jButton1);
+        jToolBar1.add(btnCompilar);
 
         getContentPane().add(jToolBar1, java.awt.BorderLayout.PAGE_START);
 
@@ -345,11 +347,23 @@ public class Principal extends javax.swing.JFrame {
         }    
     }//GEN-LAST:event_btnAbrirActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        AnalisisLexico analyzer = new AnalisisLexico(); 
-        File file = editor.getArchivo();
-        
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void btnCompilarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCompilarActionPerformed
+        editor = (Editor) tpnFuentes.getComponent(tpnFuentes.getSelectedIndex());
+        File archivo = editor.getArchivo().getAbsoluteFile();
+        System.out.println(archivo);
+        if(!archivo.exists()){
+            JOptionPane.showMessageDialog(this, "No hay ningun archivo seleccionado");
+        }else if(archivo.exists()){
+           salida = new Salida(archivo);
+           tpnSalidas.addTab(archivo.getName() + " Output", salida);
+           tpnSalidas.setSelectedComponent(salida);
+        }
+        try {
+            salida.compilar();
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_btnCompilarActionPerformed
     
     public void saveAs(File archivo, boolean remove) {
         editor = (Editor) tpnFuentes.getSelectedComponent();
@@ -407,12 +421,12 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton btnAbrir;
     private javax.swing.JButton btnCerrar;
     private javax.swing.JButton btnCerrarTodo;
+    private javax.swing.JButton btnCompilar;
     private javax.swing.JButton btnGuardar;
     private javax.swing.JButton btnGuardarComo;
     private javax.swing.JButton btnGuardarTodo;
     private javax.swing.JButton btnNuevo;
     private javax.swing.JMenuItem itmNuevo;
-    private javax.swing.JButton jButton1;
     private javax.swing.JFileChooser jFileChooser1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;

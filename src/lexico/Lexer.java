@@ -5,6 +5,8 @@ package lexico;
 
 import jflex.sym;
 import java_cup.runtime.*;
+import lexico.Operators;
+import lexico.ReservedWords;
 
 /**
  * This class is a simple example lexer.

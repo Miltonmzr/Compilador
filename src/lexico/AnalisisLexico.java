@@ -57,331 +57,331 @@ public class AnalisisLexico {
                         + " valor: " + token.value + " estado: " + token.parse_state);
                 switch (token.sym) {
                     case 1:
-                        compose += "\n" + printIdentificadorClase();
+                        compose += " " + printIdentificadorClase();
                         break;
                     case 2:
-                        compose += "\n" + printOperadorComparacion();
+                        compose += " " + printOperadorComparacion();
                         break;
                     case 3:
-                        compose += "\n" + printOperadorConversion();
+                        compose += " " + printOperadorConversion();
                         break;
                     case 4:
-                        compose += "\n" + printTipoDato();
+                        compose += " " + printTipoDato();
                         break;
                     case 5:
-                        compose += "\n" + printOperadorFlujo();
+                        compose += " " + printOperadorFlujo();
                         break;
                     case 6:
-                        compose += "\n" + printTipoDato();
+                        compose += " " + printTipoDato();
                         break;
                     case 7:
-                        compose += "\n" + printOperadorComparacion();
+                        compose += " " + printOperadorComparacion();
                         break;
                     case 8:
-                        compose += "\n" + printOperadorError();
+                        compose += " " + printOperadorError();
                         break;
                     case 9:
-                        compose += "\n" + printTipoDato();
+                        compose += " " + printTipoDato();
                         break;
                     case 10:
-                        compose += "\n" + printOperadorConfirmacion();
+                        compose += " " + printOperadorConfirmacion();
                         break;
                     case 11:
-                        compose += "\n" + printTipoArchivo();
+                        compose += " " + printTipoArchivo();
                         break;
                     case 12:
-                        compose += "\n" + printIdentificadorDato();
+                        compose += " " + printIdentificadorDato();
                         break;
                     case 13:
-                        compose += "\n" + printOperadorFlujo();
+                        compose += " " + printOperadorFlujo();
                         break;
                     case 14:
-                        compose += "\n" + printTipoDato();
+                        compose += " " + printTipoDato();
                         break;
                     case 15:
-                        compose += "\n" + printOperadorFlujo();
+                        compose += " " + printOperadorFlujo();
                         break;
                     case 16:
-                        compose += "\n" + printOperadorFlujo();
+                        compose += " " + printOperadorFlujo();
                         break;
                     case 17:
-                        compose += "\n" + printOperadorFlujoDatos();
+                        compose += " " + printOperadorFlujoDatos();
                         break;
                     case 18:
-                        compose += "\n" + printTipoDato();
+                        compose += " " + printTipoDato();
                         break;
                     case 19:
-                        compose += "\n" + printOperadorFlujo();
+                        compose += " " + printOperadorFlujo();
                         break;
                     case 20:
-                        compose += "\n" + printTipoArchivo();
+                        compose += " " + printTipoArchivo();
                         break;
                     case 21:
-                        compose += "\n" + printOperadorFlujo();
+                        compose += " " + printOperadorFlujo();
                         break;
                     case 22:
-                        compose += "\n" + printIdentificadorDato();
+                        compose += " " + printIdentificadorDato();
                         break;
                     case 23:
-                        compose += "\n" + printIdentificadorDato();
+                        compose += " " + printIdentificadorDato();
                         break;
                     case 24:
-                        compose += "\n" + printStaticValue();
+                        compose += " " + printStaticValue();
                         break;
                     case 25:
-                        compose += "\n" + printIdentificadorDato();
+                        compose += " " + printIdentificadorDato();
                         break;
                     case 26:
-                        compose += "\n" + printTipoDato();
+                        compose += " " + printTipoDato();
                         break;
                     case 27:
-                        compose += "\n" + printOperadorFlujoDatos();
+                        compose += " " + printOperadorFlujoDatos();
                         break;
                     case 28:
-                        compose += "\n" + printOperadorFlujoDatos();
+                        compose += " " + printOperadorFlujoDatos();
                         break;
                     case 29:
-                        compose += "\n" + printOperadorFlujo();
+                        compose += " " + printOperadorFlujo();
                         break;
                     case 30:
-                        compose += "\n" + printOperadorFlujoDatos();
+                        compose += " " + printOperadorFlujoDatos();
                         break;
                     case 31:
-                        compose += "\n" + printIdentificadorClase();
+                        compose += " " + printIdentificadorClase();
                         break;
                     case 32:
-                        compose += "\n" + printOperadorComparacion();
+                        compose += " " + printOperadorComparacion();
                         break;
                     case 33:
-                        compose += "\n" + printTipoDato();
+                        compose += " " + printTipoDato();
                         break;
                     case 34:
-                        compose += "\n" + printTipoArchivo();
+                        compose += " " + printTipoArchivo();
                         break;
                     case 35:
-                        compose += "\n" + printIdentificadorDato();
+                        compose += " " + printIdentificadorDato();
                         break;
                     case 36:
-                        compose += "\n" + printOperadorComparacion();
+                        compose += " " + printOperadorComparacion();
                         break;
                     case 37:
-                        compose += "\n" + printIdentificadorClase();
+                        compose += " " + printIdentificadorClase();
                         break;
                     case 38:
-                        compose += "\n" + printTipoDato();
+                        compose += " " + printTipoDato();
                         break;
                     case 39:
-                        compose += "\n" + printIdentificadorClase();
+                        compose += " " + printIdentificadorClase();
                         break;
                     case 40:
-                        compose += "\n" + printIdentificadorDato();
+                        compose += " " + printIdentificadorDato();
                         break;
                     case 41:
-                        compose += "\n" + printStaticValue();
+                        compose += " " + printStaticValue();
                         break;
                     case 42:
-                        compose += "\n" + printTipoDato();
+                        compose += " " + printTipoDato();
                         break;
                     case 43:
-                        compose += "\n" + printTipoDato();
+                        compose += " " + printTipoDato();
                         break;
                     case 44:
-                        compose += "\n" + printOperadorFlujoDatos();
+                        compose += " " + printOperadorFlujoDatos();
                         break;
                     case 45:
-                        compose += "\n" + printEtiquetaFuncion();
+                        compose += " " + printEtiquetaFuncion();
                         break;
                     case 46:
-                        compose += "\n" + printTipoDato();
+                        compose += " " + printTipoDato();
                         break;
                     case 47:
-                        compose += "\n" + printIdentificadorGlobal();
+                        compose += " " + printIdentificadorGlobal();
                         break;
                     case 48:
-                        compose += "\n" + printIdentificadorGlobal();
+                        compose += " " + printIdentificadorGlobal();
                         break;
                     case 49:
-                        compose += "\n" + printIdentificadorGlobal();
+                        compose += " " + printIdentificadorGlobal();
                         break;
                     case 50:
-                        compose += "\n" + printIdentificadorDato();
+                        compose += " " + printIdentificadorDato();
                         break;
                     case 51:
-                        compose += "\n" + printIdentificadorDato();
+                        compose += " " + printIdentificadorDato();
                         break;
                     case 52:
-                        compose += "\n" + printOperadorFinalizacion();
+                        compose += " " + printOperadorFinalizacion();
                         break;
                     case 53:
-                        compose += "\n" + printTipoDato();
+                        compose += " " + printTipoDato();
                         break;
                     case 54:
-                        compose += "\n" + printIdentificadorClase();
+                        compose += " " + printIdentificadorClase();
                         break;
                     case 55:
-                        compose += "\n" + printIdentificadorDato();
+                        compose += " " + printIdentificadorDato();
                         break;
                     case 56:
-                        compose +="\n" + printTipoDato();
+                        compose +=" " + printTipoDato();
                         break;
                     case 57:
-                        compose += "\n" + printOperadorFlujo();
+                        compose += " " + printOperadorFlujo();
                         break;
                     case 58:
-                        compose += "\n" + printIdentificadorGlobal();
+                        compose += " " + printIdentificadorGlobal();
                         break;
                     case 59:
-                        compose += "\n" + printTipoDato();
+                        compose += " " + printTipoDato();
                         break;
                     case 60:
-                        compose += "\n" + printTipoDato();
+                        compose += " " + printTipoDato();
                         break;
                     case 61:
-                        compose += "\n" + printOperadorFlujoDatos();
+                        compose += " " + printOperadorFlujoDatos();
                         break;
                     case 62:
-                        compose += "\n" + printIdentificadorDato();
+                        compose += " " + printIdentificadorDato();
                         break;
                     case 63:
-                        compose += "\n" + printOperadorError();
+                        compose += " " + printOperadorError();
                         break;
                     case 64:
-                        compose += "\n" + printStaticValue();
+                        compose += " " + printStaticValue();
                         break;
                     case 65:
-                        compose += "\n" + printOperadorError();
+                        compose += " " + printOperadorError();
                         break;
                     case 66:
-                        compose += "\n" + printStaticValue();
+                        compose += " " + printStaticValue();
                         break;
                     case 67:
-                        compose += "\n" + printTipoDato();
+                        compose += " " + printTipoDato();
                         break;
                     case 68:
-                        compose += "\n" + printTipoDato();
+                        compose += " " + printTipoDato();
                         break;
                     case 69:
-                        compose += "\n" + printIdentificadorDato();
+                        compose += " " + printIdentificadorDato();
                         break;
                     case 70:
-                        compose += "\n" + printIdentificadorDato();
+                        compose += " " + printIdentificadorDato();
                         break;
                     case 71:
-                        compose += "\n" + printTipoDato();
+                        compose += " " + printTipoDato();
                         break;
                     case 72:
-                        compose += "\n" + printIdentificadorDato();
+                        compose += " " + printIdentificadorDato();
                         break;
                     case 73:
-                        compose += "\n" + printIdentificadorClase();
+                        compose += " " + printIdentificadorClase();
                         break;
                     case 74:
-                        compose += "\n" + printIdentificadorDato();
+                        compose += " " + printIdentificadorDato();
                         break;
                     case 75:
-                        compose += "\n" + printOperadorFlujoDatos();
+                        compose += " " + printOperadorFlujoDatos();
                         break;
                     case 76:
-                        compose += "\n" + printTipoDato();
+                        compose += " " + printTipoDato();
                         break;
                     case 77:
-                        compose += "\n" + printTipoDato();
+                        compose += " " + printTipoDato();
                         break;
                     case 78:
-                        compose += "\n" + printIdentificadorDato();
+                        compose += " " + printIdentificadorDato();
                         break;
                     case 79:
-                        compose += "\n" + printOperadorComparacion();
+                        compose += " " + printOperadorComparacion();
                         break;
                     case 80:
-                        compose += "\n" + printOperadorOperacion();
+                        compose += " " + printOperadorOperacion();
                         break;
                     case 81:
-                        compose += "\n" + printOperadorComparacion();
+                        compose += " " + printOperadorComparacion();
                         break;
                     case 82:
-                        compose +="\n" + printOperadorAritmetico();
+                        compose +=" " + printOperadorAritmetico();
                         break;
                     case 83:
-                        compose += "\n" + printOperadorAritmetico();
+                        compose += " " + printOperadorAritmetico();
                         break;
                     case 84:
-                        compose += "\n" + printOperadorAritmetico();
+                        compose += " " + printOperadorAritmetico();
                         break;
                     case 85:
-                        compose += "\n" + printOperadorComparacion();
+                        compose += " " + printOperadorComparacion();
                         break;
                     case 86:
-                        compose += "\n" + printOperadorComparacion();
+                        compose += " " + printOperadorComparacion();
                         break;
                     case 87:
-                        compose += "\n" + printOperadorComparacion();
+                        compose += " " + printOperadorComparacion();
                         break;
                     case 88:
-                        compose += "\n" + printOperadorFinalizacion();
+                        compose += " " + printOperadorFinalizacion();
                         break;
                     case 89:
-                        compose += "\n" + printOperadorFinalizacion();
+                        compose += " " + printOperadorFinalizacion();
                         break;
                     case 90:
-                        compose += "\n" + printOperadorFinalizacion();
+                        compose += " " + printOperadorFinalizacion();
                         break;
                     case 91:
-                        compose += "\n" + printOperadorFinalizacion();
+                        compose += " " + printOperadorFinalizacion();
                         break;
                     case 92:
-                        compose += "\n" + printOperadorFlujo();
+                        compose += " " + printOperadorFlujo();
                         break;
                     case 93:
-                        compose += "\n" + printOperadorFlujo();
+                        compose += " " + printOperadorFlujo();
                         break;
                     case 94:
-                        compose += "\n" + printStaticValue();
+                        compose += " " + printStaticValue();
                         break;
                     case 95:
-                        compose += "\n" + printStaticValue();
+                        compose += " " + printStaticValue();
                         break;
                     case 96:
-                        compose += "\n" + printStaticValue();
+                        compose += " " + printStaticValue();
                         break;
                     case 97:
-                        compose += "\n" + printOperadorFlujoDatos();
+                        compose += " " + printOperadorFlujoDatos();
                         break;
                     case 98:
-                        compose += "\n" + printOperadorFlujoDatos();
+                        compose += " " + printOperadorFlujoDatos();
                         break;
                     case 99:
-                        compose += "\n" + printOperadorFlujoDatos();
+                        compose += " " + printOperadorFlujoDatos();
                         break;
                     case 100:
-                        compose += "\n" + printOperadorComparacion();
+                        compose += " " + printOperadorComparacion();
                         break;
                     case 101:
-                        compose += "\n" + printOperadorComparacion();
+                        compose += " " + printOperadorComparacion();
                         break;
                     case 102:
-                        compose += "\n" + printOperadorComparacion();
+                        compose += " " + printOperadorComparacion();
                         break;
                     case 103:
-                        compose += "\n" + printOperadorComparacion();
+                        compose += " " + printOperadorComparacion();
                         break;
                     case 104:
-                        compose += "\n" + printStaticValue();
+                        compose += " " + printStaticValue();
                         break;
                     case 105:
-                        compose += "\n" + printIdentificadorClase();
+                        compose += " " + printIdentificadorClase();
                         break;
                     case 106:
-                        compose += "\n" + printOperadorFinalizacion();
+                        compose += " " + printOperadorFinalizacion();
                         break;
                     case 107:
-                        compose += "\n" + printOperadorFinalizacion();
+                        compose += " " + printOperadorFinalizacion();
                         break;
                     case 108:
-                        compose += "\n" + printOperadorFinalizacion();
+                        compose += " " + printOperadorFinalizacion();
                         break;
                     case 109:
-                        compose += "\n" + printOperadorFinalizacion();
+                        compose += " " + printOperadorFinalizacion();
                         break;
                     default:
                         break loop;
