@@ -15,6 +15,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
+import java.io.OutputStream;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
@@ -25,6 +26,8 @@ import java.nio.channels.FileChannel;
  */
 public class Editor extends javax.swing.JPanel {
     private File archivo;
+    private static final Logger log = Logger.getLogger(Editor.class.getName());
+
     
     /**
      * Creates new form Editor
@@ -98,6 +101,15 @@ public class Editor extends javax.swing.JPanel {
          
     }
         txaContenido.repaint();
+    }
+    
+    public void fileOutputWriter(String data) {
+        try (OutputStream os = new FileOutputStream(archivo)) {
+            os.write(data.getBytes(), 0, data.length());
+            os.close();
+        } catch (IOException e) {
+            log.warning(e.getMessage());
+        }
     }
     
     public File getarchivo(){

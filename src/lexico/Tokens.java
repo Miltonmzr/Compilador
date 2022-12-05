@@ -1,0 +1,19 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Enum.java to edit this template
+ */
+package lexico;
+
+/**
+ *
+ * @author Braya
+ */
+public enum Tokens {
+    COMILLAS(1),TIPO_DATO(2), CADENA(3), IF(4), ELSE(5), DO(6), WHILE(7), FOR(8),IGUAL(9), SUMA(10), RESTA(11), MULTIPLICACION(12), DIVISION(13), OPERADOR_LOGICO(14), OPERADOR_RELACIONAL(15),OPERADOR_ATRIBUCION(16), OPERADOR_INCREMENTO(17), OPERADOR_BOOLEANO(18), PARENTESIS_APERTURA(19), PARENTESIS_CIERRE(20),LLAVE_APERTURA(21), LLAVE_CIERRE(22), CORCHETE_APERTURA(23), CORCHETE_CIERRE(24), MAIN(25), PUNTO_COMA(26), IDENTIFICADOR(27), NUMERO(28), ERROR(29), ABSTRACT(30),BREAK(31), CASE(32), CATCH(33), CLASS(34), CONST(35), DEFAULT(36), FINALLY(37), GOTO(38), INTERFACE(39),NAMESPACE(40), NULL(41),OUT(42),RETURN(43),STATIC(44),SWITCH(45), THROW(46),TRY(47),VOID(48), SYSTEM(49), WRITELINE(50), CONSOLE(51), WRITE(52),INTEGER_LITERAL(53),STRING_LITERAL(54),OPERADOR_CONTEXTUAL(55);
+    
+    public int value;
+    
+    private Tokens(int value) {
+        this.value = value;
+    }
+}

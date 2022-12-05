@@ -19,7 +19,7 @@ import lexico.AnalisisLexico;
  */
 public class Principal extends javax.swing.JFrame {
     private Editor editor;
-    private Salida salida;
+    private File archivoSalida;
     /**
      * Creates new form Principal
      */
@@ -348,20 +348,50 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAbrirActionPerformed
 
     private void btnCompilarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCompilarActionPerformed
-        editor = (Editor) tpnFuentes.getComponent(tpnFuentes.getSelectedIndex());
-        File archivo = editor.getArchivo().getAbsoluteFile();
-        System.out.println(archivo);
-        if(!archivo.exists()){
-            JOptionPane.showMessageDialog(this, "No hay ningun archivo seleccionado");
-        }else if(archivo.exists()){
-           salida = new Salida(archivo);
-           tpnSalidas.addTab(archivo.getName() + " Output", salida);
-           tpnSalidas.setSelectedComponent(salida);
-        }
-        try {
-            salida.compilar();
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+    if (tpnFuentes.getSelectedIndex() != -1) {
+            editor = (Editor) tpnFuentes.getSelectedComponent();
+
+            if (editor.getarchivo().getName().endsWith(".txt")) {
+                String output = AnalisisLexico.analyze(editor.getArchivo());
+                archivoSalida = new File("src/archivos/Resultado");
+
+                if (archivoSalida != null) {
+                    if(archivoSalida.exists()) {
+                        archivoSalida.delete();
+                        archivoSalida = new File("src/archivos/Resultado");
+                    }
+                    
+                    if (!archivoSalida.exists()) {
+                        if(tpnSalidas.getComponentCount() > 1) {
+                            tpnSalidas.remove(1);
+                        }
+                        editor = new Editor(archivoSalida);
+                        editor.txaContenido.setText(output);
+                        try {
+                            editor.abrir(archivoSalida);
+                        } catch (IOException ex) {
+                            Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+                        }
+                        tpnSalidas.addTab(archivoSalida.getName(), editor);
+                        tpnSalidas.setSelectedComponent(editor);
+                    } else {
+                        editor = new Editor(archivoSalida);
+                        editor.txaContenido.setText(output);
+                        try {
+                            editor.abrir(archivoSalida);
+                        } catch (IOException ex) {
+                            Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+                        }
+                        tpnSalidas.setSelectedComponent(editor);
+                    }
+                    
+                    editor.fileOutputWriter(editor.txaContenido.getText());
+                }
+            } else {
+                JOptionPane.showMessageDialog(this, "Por favor seleccione un archivo valido, con extension .txt!");
+            }
+        } else {
+            JOptionPane.showMessageDialog(this, "Por favor seleccione un archivo antes de correr su archivo!");
         }
     }//GEN-LAST:event_btnCompilarActionPerformed
     

@@ -1,0 +1,44 @@
+using System;
+using System.Web.Services.Description;
+using System.Collections;
+using System.Xml;
+
+//Hola chavelo
+namespace HelloWorld
+{
+    class Hello 
+    {         
+        static void Main(String[] args)
+        { 
+            int a = 5;
+            int b = 10;
+            
+            int suma = fsumador(a,b); //llamada funcion
+
+            String data;
+            //nada
+            for (int i = 0; i < 3; i++)
+            {
+                if(i == 2) 
+                {
+                    a = 2;
+                }
+            }
+            msumador(a,b); 
+        }
+
+        //Declaracion Funcion
+        static int fsumador(int a, int b)
+        {
+            int suma = a + b;
+ 
+            return suma;
+        }
+ 
+        //Declaracion Metodo
+        static void msumador(int a, int b)
+        {
+            Console.WriteLine("(Metodo) La suma es "+ (a+b));
+        }
+    }
+}

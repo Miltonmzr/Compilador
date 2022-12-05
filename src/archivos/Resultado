@@ -1,0 +1,394 @@
+texto: #43 valor: namespace
+
+Valor constante!
+texto: #29 valor: HelloWorld
+
+Operador de flujo!
+texto: #23 valor: {
+
+Operador de flujo!
+texto: #36 valor: class
+
+Operador de error!
+texto: #29 valor: Hello
+
+Operador de flujo!
+texto: #23 valor: {
+
+Operador de flujo!
+texto: #47 valor: static
+
+Operador de flujo de datos
+texto: #51 valor: void
+
+Valor constante!
+texto: #27 valor: Main
+
+Operador de flujo!
+texto: #21 valor: (
+
+Operador de flujo!
+texto: #5 valor: String
+
+Operacion de comparacion!
+texto: #25 valor: [
+
+Operador de flujo!
+texto: #26 valor: ]
+
+Valor constante!
+texto: #29 valor: args
+
+Operador de flujo!
+texto: #22 valor: )
+
+Operador de flujo!
+texto: #23 valor: {
+
+Operador de flujo!
+texto: #4 valor: int
+
+Tipo de dato!
+texto: #29 valor: a
+
+Operador de flujo!
+texto: #11 valor: =
+
+Operador aritmetico!
+texto: #30 valor: 5
+
+Operador de flujo de datos
+texto: #28 valor: ;
+
+Identificador de dato!
+texto: #4 valor: int
+
+Tipo de dato!
+texto: #29 valor: b
+
+Operador de flujo!
+texto: #11 valor: =
+
+Operador aritmetico!
+texto: #30 valor: 10
+
+Operador de flujo de datos
+texto: #28 valor: ;
+
+Identificador de dato!
+texto: #4 valor: int
+
+Tipo de dato!
+texto: #29 valor: suma
+
+Operador de flujo!
+texto: #11 valor: =
+
+Operador aritmetico!
+texto: #29 valor: fsumador
+
+Operador de flujo!
+texto: #21 valor: (
+
+Operador de flujo!
+texto: #29 valor: a
+
+Operador de flujo!
+texto: #57 valor: ,
+
+Componente de comentario!
+texto: #29 valor: b
+
+Operador de flujo!
+texto: #22 valor: )
+
+Operador de flujo!
+texto: #28 valor: ;
+
+Identificador de dato!
+texto: #5 valor: String
+
+Operacion de comparacion!
+texto: #29 valor: data
+
+Operador de flujo!
+texto: #28 valor: ;
+
+Identificador de dato!
+texto: #10 valor: for
+
+Operador aritmetico!
+texto: #21 valor: (
+
+Operador de flujo!
+texto: #4 valor: int
+
+Tipo de dato!
+texto: #29 valor: i
+
+Operador de flujo!
+texto: #11 valor: =
+
+Operador aritmetico!
+texto: #30 valor: 0
+
+Operador de flujo de datos
+texto: #28 valor: ;
+
+Identificador de dato!
+texto: #29 valor: i
+
+Operador de flujo!
+texto: #17 valor: <
+
+Operador atribucion!
+texto: #30 valor: 3
+
+Operador de flujo de datos
+texto: #28 valor: ;
+
+Identificador de dato!
+texto: #29 valor: i
+
+Operador de flujo!
+texto: #19 valor: ++
+
+Operador booleano!
+texto: #22 valor: )
+
+Operador de flujo!
+texto: #23 valor: {
+
+Operador de flujo!
+texto: #6 valor: if
+
+Operacion de comparacion!
+texto: #21 valor: (
+
+Operador de flujo!
+texto: #29 valor: i
+
+Operador de flujo!
+texto: #17 valor: ==
+
+Operador atribucion!
+texto: #30 valor: 2
+
+Operador de flujo de datos
+texto: #22 valor: )
+
+Operador de flujo!
+texto: #23 valor: {
+
+Operador de flujo!
+texto: #29 valor: a
+
+Operador de flujo!
+texto: #11 valor: =
+
+Operador aritmetico!
+texto: #30 valor: 2
+
+Operador de flujo de datos
+texto: #28 valor: ;
+
+Identificador de dato!
+texto: #24 valor: }
+
+Operador de flujo!
+texto: #24 valor: }
+
+Operador de flujo!
+texto: #29 valor: msumador
+
+Operador de flujo!
+texto: #21 valor: (
+
+Operador de flujo!
+texto: #29 valor: a
+
+Operador de flujo!
+texto: #57 valor: ,
+
+Componente de comentario!
+texto: #29 valor: b
+
+Operador de flujo!
+texto: #22 valor: )
+
+Operador de flujo!
+texto: #28 valor: ;
+
+Identificador de dato!
+texto: #24 valor: }
+
+Operador de flujo!
+texto: #47 valor: static
+
+Operador de flujo de datos
+texto: #4 valor: int
+
+Tipo de dato!
+texto: #29 valor: fsumador
+
+Operador de flujo!
+texto: #21 valor: (
+
+Operador de flujo!
+texto: #4 valor: int
+
+Tipo de dato!
+texto: #29 valor: a
+
+Operador de flujo!
+texto: #57 valor: ,
+
+Componente de comentario!
+texto: #4 valor: int
+
+Tipo de dato!
+texto: #29 valor: b
+
+Operador de flujo!
+texto: #22 valor: )
+
+Operador de flujo!
+texto: #23 valor: {
+
+Operador de flujo!
+texto: #4 valor: int
+
+Tipo de dato!
+texto: #29 valor: suma
+
+Operador de flujo!
+texto: #11 valor: =
+
+Operador aritmetico!
+texto: #29 valor: a
+
+Operador de flujo!
+texto: #12 valor: +
+
+Operador aritmetico!
+texto: #29 valor: b
+
+Operador de flujo!
+texto: #28 valor: ;
+
+Identificador de dato!
+texto: #46 valor: return
+
+Valor constante!
+texto: #29 valor: suma
+
+Operador de flujo!
+texto: #28 valor: ;
+
+Identificador de dato!
+texto: #24 valor: }
+
+Operador de flujo!
+texto: #47 valor: static
+
+Operador de flujo de datos
+texto: #51 valor: void
+
+Valor constante!
+texto: #29 valor: msumador
+
+Operador de flujo!
+texto: #21 valor: (
+
+Operador de flujo!
+texto: #4 valor: int
+
+Tipo de dato!
+texto: #29 valor: a
+
+Operador de flujo!
+texto: #57 valor: ,
+
+Componente de comentario!
+texto: #4 valor: int
+
+Tipo de dato!
+texto: #29 valor: b
+
+Operador de flujo!
+texto: #22 valor: )
+
+Operador de flujo!
+texto: #23 valor: {
+
+Operador de flujo!
+texto: #54 valor: Console
+
+Valor constante!
+texto: #57 valor: .
+
+Componente de comentario!
+texto: #53 valor: WriteLine
+
+Valor constante!
+texto: #21 valor: (
+
+Operador de flujo!
+texto: #3 valor: "
+
+Tipo de dato!
+texto: #21 valor: (
+
+Operador de flujo!
+texto: #29 valor: Metodo
+
+Operador de flujo!
+texto: #22 valor: )
+
+Operador de flujo!
+texto: #29 valor: La
+
+Operador de flujo!
+texto: #29 valor: suma
+
+Operador de flujo!
+texto: #29 valor: es
+
+Operador de flujo!
+texto: #3 valor: "
+
+Tipo de dato!
+texto: #12 valor: +
+
+Operador aritmetico!
+texto: #21 valor: (
+
+Operador de flujo!
+texto: #29 valor: a
+
+Operador de flujo!
+texto: #12 valor: +
+
+Operador aritmetico!
+texto: #29 valor: b
+
+Operador de flujo!
+texto: #22 valor: )
+
+Operador de flujo!
+texto: #22 valor: )
+
+Operador de flujo!
+texto: #28 valor: ;
+
+Identificador de dato!
+texto: #24 valor: }
+
+Operador de flujo!
+texto: #24 valor: }
+
+Operador de flujo!
+texto: #24 valor: }
+
+Operador de flujo!
+texto: #0 valor: null
